@@ -116,11 +116,11 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         ((TextView)findViewById(R.id.placeNameTextView)).setText(pn);
         int temp = (int) Double.parseDouble(t);
         ((TextView)findViewById(R.id.temperatureTextView)).setText(temp+"°C");
-        ((TextView)findViewById(R.id.maxTemperatureTextView)).setText("Maxi Temp: "+maxt+"°C");
+        ((TextView)findViewById(R.id.maxTemperatureTextView)).setText("Max Temp: "+maxt+"°C");
         ((TextView)findViewById(R.id.minTemperatureTextView)).setText("Min Temp: "+mint+"°C");
         ((TextView)findViewById(R.id.weatherInfoTextView)).setText(wi);
-        ((TextView)findViewById(R.id.pressureTextView)).setText("Pressure: "+pres+"Pa");
-        ((TextView)findViewById(R.id.humidityTextView)).setText("Humidity: "+humid);
+        ((TextView)findViewById(R.id.pressureTextView)).setText("Pressure: "+pres+" hPa");
+        ((TextView)findViewById(R.id.humidityTextView)).setText("Humidity: "+humid+"%");
         int id1 = Integer.parseInt(id);
 
         if(id1>=200 && id1<=232){
